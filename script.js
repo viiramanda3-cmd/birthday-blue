@@ -29,6 +29,9 @@ document.addEventListener("click", function() {
 
     const music =
     document.getElementById("bgmusic");
+    document.addEventListener("click", function () {
+    document.getElementById("bgmusic").play();
+}, { once: true });
 
     music.play();
 
