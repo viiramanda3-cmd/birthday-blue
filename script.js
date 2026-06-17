@@ -25,7 +25,14 @@ for(let i=0; i<50; i++){
 
     particles.appendChild(star);
 }
+document.addEventListener("click", function() {
 
+    const music =
+    document.getElementById("bgmusic");
+
+    music.play();
+
+}, { once: true });
 function playMusic(){
     document.getElementById("bgmusic").play();
 }
