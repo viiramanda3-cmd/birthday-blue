@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #1E3A8A,
+        #1E293B
+    );
+
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero h3{
+    color:#7DD3FC;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    line-height:1.8;
+    color:#CBD5E1;
+}
+
+/* BUTTON */
+
+button{
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+    border-radius:50px;
+
+    background:#38BDF8;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0EA5E9;
+    transform:translateY(-3px);
+}
+
+/* MESSAGE */
+
+.message{
+
+    width:80%;
+
+    max-width:800px;
+
+    margin:100px auto;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.message h2{
+    color:#7DD3FC;
+    margin-bottom:20px;
+}
+
+.message p{
+    line-height:2;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    margin-bottom:40px;
+}
+
+.photos{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.photos img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:0.4s;
+}
+
+.photos img:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#CBD5E1;
+}
+
+/* PARTICLE */
+
+.particle{
+
+    position:fixed;
+
+    top:-20px;
+
+    color:#7DD3FC;
+
+    font-size:20px;
+
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+
+    0%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(100vh);
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .message{
+        width:90%;
+    }
+}

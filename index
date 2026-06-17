@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio autoplay loop>
+        <source src="music/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="particles"></div>
+
+    <section class="hero">
+
+        <h3>🎂 HAPPY BIRTHDAY</h3>
+
+        <h1>Favian Eka Widianto</h1>
+
+        <p>
+            Happy Birthday my favorit person.
+            Semoga selalu sehat, bahagia, dan semua impianmu tercapai.
+        </p>
+
+        <button onclick="scrollToMessage()">
+            Buka Pesan
+        </button>
+
+    </section>
+
+    <section class="message" id="message">
+
+        <h2>FOR YOU 💙</h2>
+
+        <p>
+            Hari ini adalah hari yang sangat spesial karena menjadi
+            pengingat bahwa dunia pernah menghadirkan seseorang yang luar biasa.
+
+            Terima kasih sudah hadir dan membawa banyak kebahagiaan.
+
+            Semoga panjang umur, sehat selalu, dan sukses dalam segala hal.
+        </p>
+
+    </section>
+
+    <section class="gallery">
+
+        <h2>Favorit Person</h2>
+
+        <div class="photos">
+
+            <img src="img/foto1.jpeg">
+            <img src="img/foto2.jpeg">
+            <img src="img/foto3.jpeg">
+            <img src="img/foto4.jpeg">
+
+        </div>
+
+    </section>
+
+    <footer>
+        Made With Violeta Ayu Ramanda
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
